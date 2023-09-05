@@ -10,7 +10,7 @@
    - name: "Only run update_cache is last one is more than 86400 seconds old"
      ansible.builtin.apt:
       update_cache: yes
-      cache_valid_time: 86400
+      cache_valid_time: 43200
 
    - name: "Update and install required packages"
      ansible.builtin.apt:
